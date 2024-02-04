@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { Icon } from 'astro-icon/components'
 ---
 
 <!doctype html>
@@ -14,6 +15,18 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       span {
            font-size: 2em;
           }
+      a {
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        margin-top: 8px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+     .social {
+        text-align: center;
+    } 
+    
     </style>
 	<body>
 		<Header title={SITE_TITLE} />
@@ -22,12 +35,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
             <p>Welcome to my contact page! Feel free to leave me a message, a question, or even a suggestion. I am always open to new opportunities for collaboration and learning.</p>
                       <p> <span id="countdown">TIME</span>
  The countdown will end on the day of my graduation. In the meantime, I remain focused on my studies and development projects.</p> 
- <p>If you are seeking a dedicated and motivated intern to join your team in 2024, I would love to connect and discuss how I can contribute to your organization's success. Please feel free to reach out to me through the contact information provided in this portfolio.</p>
+ <p>If you're seeking a dedicated and motivated intern to join your team in 2024, I'd love to connect and discuss how I can contribute to your organization's success. I am actively looking for an internship for the year 2024, starting in September 2024, as part of my second year in my computer science program. Please feel free to reach out to me via the contact information provided in this portfolio.</p>
  <br>
  <h4>Social Media</h4>
- <div>
-<a>Github</a>
-<a>Linkedin</a>
+ <div class="social">
+<a href="https://github.com/AirbnbEcoPlus"><Icon name="github" size={48} /></a>
+<a href="https://fr.linkedin.com/in/adrien-fauré-8b7411233"><Icon name="linkedin" size={48} /></a>
  </div>
  <br>
  <h4>Contact Information</h4>
