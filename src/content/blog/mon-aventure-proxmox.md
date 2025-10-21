@@ -1,6 +1,6 @@
 ---
 title: "Pourquoi j’ai tout migré en VM : mon aventure avec Proxmox"
-description: "Introduction a mon blog"
+description: "Le cluster proxmox"
 pubDate: 10/12/2025
 heroImage: "/blog/proxmox/cover.png"
 ---
